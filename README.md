@@ -11,11 +11,15 @@ This prototype explores preprocessing data using just tensorflow.
 # Usage
 
 Clone the project using `git clone` and then `cd` into the project.
-Then create a new conda environment using:
+To setup the same environment as the one required by the project in a folder called `envs` in the root of the project, create a new conda environment using:
 
-`conda env create -f environment.yml -p envs`
+`conda env create -f .\environment.yml -p .\envs`
 
-to setup the same environment as the one required by the project in a folder called `envs` in the root of the project.
+> Note: The encoding of the file `environment.yml` has to be UTF-8 and not UTF-16. If you are getting the issue similar to `Issue#1` then this might be why. To change it, follow the solution referenced on the issue.
 
-Run the project from the root directory of the project using
+And activate it using:
+
+`conda activate .\envs`
+
+And finally, run the project from the root directory of the project using
 `python src/main.py`.
